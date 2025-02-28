@@ -1,0 +1,118 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    overflow: hidden;
+    font-size: 100%;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+.container {
+    width: 98%;
+    height: 36rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #e84393;
+    background-color: #ffcccc;
+    margin-left: 0.5rem;
+    border-radius: 10px;
+}
+
+.add-buttom{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.buttom{
+    margin-bottom: 0.5rem;
+    position: absolute;
+    bottom: 0;
+}
+
+#buttom-icon{
+    width: 4rem;
+    height: 3.5rem;
+    margin-top: 0.25rem;
+}
+
+form {
+    width: 65%;
+    height: 14rem;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 0.5rem;
+    background-color: #f78fb3;
+    border: 0.5px solid #c44569;
+    position: absolute;
+    top: 12.5em;
+    right: 11em;
+    margin-bottom: 24rem;
+}
+
+.check-cancel{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    margin-bottom: 12rem;
+
+}
+
+#task-maker{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+#canceler{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+
+.items{
+    width: 100%;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3.5rem;
+}
+
+label{
+    display: flex;
+    gap: 0.5rem;
+}
+
+input,textarea{
+    border-radius: 5px;
+    resize: none;
+}
+
+.input1{
+    width: 40%;
+    height: 1.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    border: 1px solid black;
+}
+
+.input2{
+    width: 75%;
+    height: 4.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid black;
+}
+
+
+
