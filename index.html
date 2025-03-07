@@ -8,31 +8,88 @@
     <title>to do</title>
 </head>
 <body>
-    <h1>Add your tasks</h1>
     <div class="container">
+        <h1>To add your tasks click on plus</h1>
+        <div class="form-holder">
+            
+        </div>
     </div>
 
-    <form action="#">
+    <footer>
+        <div class="buttom">
+            <a href="#" class="question-buttom"><img src="./question.png" alt="how to use" class="footer-icon"></a>
+        </div>
+
+        <div class="buttom">
+        <a href="#" class="add-buttom"><img src="./add.png" alt="adding buttom" class="footer-icon"></a>
+        </div>
+
+        <div class="buttom">
+        <a href="#" class="clear-buttom"><img src="./delete.png" alt="cleaning" class="footer-icon"></a>
+        </div>
+    </footer>
+
+    
+    <div class="question-items">
+
+        <a href="#" class="form-buttom"><img src="./restriction.png" id="question-canceler" alt="cancel"></a>
+
+
+        <div class="question-item">
+            <img src="./add.png" alt="add buttom" class="definition">
+            <p>You can add your tasks one by one by clicking on this button.</p>
+        </div>
+        <div class="question-item">
+            <img src="./delete.png" alt="clear buttom" class="definition">
+            <p>You can delete all of the tasks by clicking on this button.</p>
+        </div>
+        <div class="question-item">
+            <img src="./cut.png" alt="edit buttom" class="definition">
+            <p>You can edit your task by clicking on this button.</p>
+        </div>
+        <div class="question-item">
+            <img src="./wrong.png" alt="delete buttom" class="definition">
+            <p>You can delete your tasks one by one by clicking on this button.</p>
+        </div>
+        <div class="question-item">
+            <div>
+                <img src="./check-mark.png" alt="done buttom" class="definition">
+                <img src="./check-mark-black.png" alt="done buttom" class="definition">
+            </div>
+            <p>You can mark the tasks as done or undone by clicking on this button.</p>
+        </div>
+
+    </div>
+
+
+    <form action="#" class="form">
 
         <div class="check-cancel">
             <a href="#" class="form-buttom"><img src="./check.png" id="task-maker" alt="making task"></a>
             <a href="#" class="form-buttom"><img src="./restriction.png" id="canceler" alt="cancel"></a>
         </div>
         <div class="items">
-                <label>title : 
-                    <input type="text" class="input1" placeholder="Add a title">
-                </label>
-            </div>
-            <div class="items">
-                <label> task : 
-                <textarea class="input2" placeholder="Add your task"></textarea>
-                </label>
+            <label>title:
+                <input type="text" class="input1" maxlength="10" placeholder="Add a title">
+            </label>
+        </div>
+        <div class="items">
+            <label id="description">task:
+                <textarea class="input2" maxlength="65" placeholder="Add your task"></textarea>
+            </label>
         </div>
     </form>
 
-    <div class="add-buttom">
-    <a href="#" class="buttom"><img src="./add.png" alt="adding buttom" id="buttom-icon"></a>
+
+    <div class="ask-to-clean">
+        <h2>Are you sure you want to delete all tasks?</h2>
+        <p>*TIP* Be careful this will delete all tasks,including done and undone ones!</p>
+        <div class="yes-no">
+            <button id="yes">YES!</button>
+            <button id="no">NO!</button>
+        </div>
     </div>
+
     <script src="./script.js"></script>
 </body>
 </html>
